@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #88b2dc; /* Deep blue background */
+    color: white; /* White text for contrast */
+  }
+  
+  h1 {
+    text-align: center;
+    color: white; /* White heading for contrast */
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #taskInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 120px); /* Responsive width */
+    background-color: white; /* White input field */
+    color: black; /* Black text for input */
+  }
+  
+  #addTaskBtn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0b0b0c; /* Light blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #taskList li {
+    background-color: #00a0ff; /* Light blue task background */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex; /* For delete button alignment */
+    justify-content: space-between; /* Space between task and delete button */
+    color: white; /* White text for tasks */
+  }
+  
+  #taskList li button {
+    background-color: #0056b3; /* Deep blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
