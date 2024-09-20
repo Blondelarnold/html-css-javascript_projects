@@ -1,22 +1,15 @@
-const display = document.getElementById('display');
+var imageThumbs = document.getElementById("image-thumbs");
+var currentImage = document.getElementById("current-image");
 
-function append(value) {
-    display.value += value;
-}
-
-function clearDisplay() {
-    display.value = '';
-}
-
-function deleteChar() {
-    display.value = display.value.slice(0, -1);
-}
-
-function calculate() {
-    try {
-        display.value = eval(display.value);
-    } catch (e) {
-        display.value = 'Error';
+for (var i = 1; i <= 10; i++) {
+  var thumb = document.createElement("img");
+  thumb.src = "images/image" + i + ".jpg";
+  thumb.alt = "Image " + i;
+  thumb.classList.add("thumb");
+  imageThumbs.appendChild(thumb);
+  thumb.addEventListener(
+    "click", function() {
+      currentImage.src = this.src;
     }
+  );
 }
-
