@@ -1,15 +1,15 @@
-var imageThumbs = document.getElementById("image-thumbs");
-var currentImage = document.getElementById("current-image");
-
-for (var i = 1; i <= 10; i++) {
-  var thumb = document.createElement("img");
-  thumb.src = "images/image" + i + ".jpg";
-  thumb.alt = "Image " + i;
-  thumb.classList.add("thumb");
-  imageThumbs.appendChild(thumb);
-  thumb.addEventListener(
-    "click", function() {
-      currentImage.src = this.src;
-    }
-  );
+function sendMessage() {
+  const userInput = document.getElementById('user-input').value;
+  const messages = document.getElementById('messages');
+  
+  if (userInput.trim() !== '') {
+    messages.innerHTML += `<div class="message">${userInput}</div>`;
+  
+    // Simulate AI response
+    setTimeout(() => {
+      messages.innerHTML += `<div class="message">Sorry, I am not able to answer math questions yet.</div>`;
+    }, 1000);
+  
+    document.getElementById('user-input').value = '';
+  }
 }
