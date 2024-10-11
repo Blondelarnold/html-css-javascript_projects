@@ -1,27 +1,92 @@
+body {
+    font-family:Arial, sans-serif;
+    background-color:#057f05b7;
+    margin: 0;
+    padding: 0;
+}
+.biast-school{
+position: absolute;
+top:0;
+left:0;
+width: 35%;
+border: 15px solid black;
+padding: 15px;
+text-align: center;
 
-.chatbot-container {
-  width: 300px;
-  height: 400px;
-  border: 1px solid #090670;
-  overflow-y: scroll;
-  padding: 10px;
+}
+.école-biast{
+position: absolute;
+top:0;
+right:0;
+width: 35%;
+border: 15px solid black;
+padding: 15px;
+text-align: center;
+
+}
+header {
+    padding:20px;
+    text-align: center;
+    background: color #990000;/*DEEP RED*/
+
 }
 
-.message {
-  background-color: #01030ca2;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
+header img{
+
+    max-width: 40%;
+
+}
+h1{
+
+    font-size: 2em;
+    margin: 0;
+
 }
 
-input[type="text"] {
-  width: 80%;
-  padding: 10px;
-  margin-top: 10px;
+.container{
+    display:flex;
+    padding: 20px 5%;
+    justify-content: center;
+    
+}
+    .left-form{
+        width: 45%;
+        background-color: #ECA1A6;
+        margin-right: 10%;
+        padding: 20px;
+
+    }
+
+
+.right-form{
+ width: 45%;
+ background-color: #A2D5A2;
+ padding: 20px;
+
+   }
+   .form{
+margin: 0;
+
 }
 
-button {
-  padding: 10px;
-  margin-top: 10px;
-  cursor: pointer;
+
+.inputGroup{
+    margin-bottom: 10px;
+}
+
+input{
+width: calc(100%-10px);
+padding: 10px;
+box-sizing: border-box;
+
+
+}
+
+
+footer{
+
+    text-align: center;
+    background-color:rgba(255, 0, 0, 0.731);
+    padding : 25px;
+    color: white;
 }
