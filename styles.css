@@ -1,92 +1,112 @@
+/* General Styles */
 body {
-    font-family:Arial, sans-serif;
-    background-color:#057f05b7;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
     margin: 0;
     padding: 0;
 }
-.biast-school{
-position: absolute;
-top:0;
-left:0;
-width: 35%;
-border: 15px solid black;
-padding: 15px;
-text-align: center;
 
-}
-.école-biast{
-position: absolute;
-top:0;
-right:0;
-width: 35%;
-border: 15px solid black;
-padding: 15px;
-text-align: center;
-
-}
 header {
-    padding:20px;
-    text-align: center;
-    background: color #990000;/*DEEP RED*/
-
-}
-
-header img{
-
-    max-width: 40%;
-
-}
-h1{
-
-    font-size: 2em;
-    margin: 0;
-
-}
-
-.container{
-    display:flex;
-    padding: 20px 5%;
-    justify-content: center;
-    
-}
-    .left-form{
-        width: 45%;
-        background-color: #ECA1A6;
-        margin-right: 10%;
-        padding: 20px;
-
-    }
-
-
-.right-form{
- width: 45%;
- background-color: #A2D5A2;
- padding: 20px;
-
-   }
-   .form{
-margin: 0;
-
-}
-
-
-.inputGroup{
-    margin-bottom: 10px;
-}
-
-input{
-width: calc(100%-10px);
-padding: 10px;
-box-sizing: border-box;
-
-
-}
-
-
-footer{
-
-    text-align: center;
-    background-color:rgba(255, 0, 0, 0.731);
-    padding : 25px;
+    background-color: #007bff;
     color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 10px 0 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Adjusting height for header and footer */
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Maximum width for the form */
+}
+
+label {
+    margin: 10px 0 5px;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* Adjust icon size */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }

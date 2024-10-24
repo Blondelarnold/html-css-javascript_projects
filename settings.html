@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paysika Simulation - Accueil</title>
+    <title>Paysika Simulation - Paramètres</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -20,11 +20,21 @@
                 <li><a href="settings.html">Paramètres</a></li>
             </ul>
         </nav>
-        <h1>Bienvenue sur Paysika Simulation</h1>
+        <h1>Paramètres du compte</h1>
     </header>
 
     <main>
-        <p>Bienvenue sur la simulation Paysika, où vous pouvez pratiquer vos compétences de gestion financière.</p>
+        <div class="form-container">
+            <form id="settings-form">
+                <label for="settings-email">Email :</label>
+                <input type="email" id="settings-email" name="email" placeholder="Entrez votre email" required>
+                
+                <label for="settings-password">Mot de passe :</label>
+                <input type="password" id="settings-password" name="password" placeholder="Entrez un nouveau mot de passe">
+
+                <button type="submit">Mettre à jour</button>
+            </form>
+        </div>
     </main>
 
     <footer>
